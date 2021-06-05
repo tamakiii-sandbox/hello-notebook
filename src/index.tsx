@@ -1,20 +1,10 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 import "tailwindcss/tailwind.css"
+import "./index.css"
 
-console.log('Hello World!');
-
-const Header = () => (
-  <header>
-    hello
-  </header>
-)
-
-const Footer = () => (
-  <footer>
-    bye
-  </footer>
-)
+import { Header } from "./component/Header";
+import { Footer } from "./component/Footer";
 
 const App = () => {
   return (
@@ -26,6 +16,8 @@ const App = () => {
 }
 
 ReactDOM.render(
-  <App />,
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.querySelector("#app")
-)
+);
