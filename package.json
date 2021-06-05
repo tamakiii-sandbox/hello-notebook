@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/tamakiii-sandbox/hello-notebook/issues"
   },
-  "homepage": "https://github.com/tamakiii-sandbox/hello-notebook#readme"
+  "homepage": "https://github.com/tamakiii-sandbox/hello-notebook#readme",
+  "devDependencies": {
+    "ts-loader": "^9.2.2",
+    "typescript": "^4.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
 }
