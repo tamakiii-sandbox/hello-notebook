@@ -1,7 +1,5 @@
-.PHONY: help setup clean
-.PHONY: server
-
-PORT_HTTP_SERVER := 80
+.PHONY: help setup build clean
+.PHONY: http-server watch
 
 help:
 	@cat $(firstword $(MAKEFILE_LIST))
@@ -9,8 +7,14 @@ help:
 setup: \
 	node_modules
 
+build:
+	npx --no-install webpack --mode=development
+
+watch:
+	npx --no-install webpack --watch --mode=development
+
 http-server:
-	npx --no-install $@ -a 0.0.0.0 -p $(PORT_HTTP_SERVER) .
+	npx --no-install webpack serve
 
 node_modules:
 	npm install --dev
