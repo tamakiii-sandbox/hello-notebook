@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/tamakiii-sandbox/hello-notebook#readme",
   "devDependencies": {
+    "http-server": "^0.12.3",
+    "nodemon": "^2.0.7",
     "ts-loader": "^9.2.2",
     "typescript": "^4.3.2",
     "webpack": "^5.38.1",
