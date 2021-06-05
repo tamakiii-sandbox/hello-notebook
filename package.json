@@ -18,14 +18,14 @@
   },
   "homepage": "https://github.com/tamakiii-sandbox/hello-notebook#readme",
   "devDependencies": {
+    "autoprefixer": "^10.2.6",
     "http-server": "^0.12.3",
     "nodemon": "^2.0.7",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.4",
     "ts-loader": "^9.2.2",
     "typescript": "^4.3.2",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
-  },
-  "dependencies": {
-    "tailwindcss": "^2.1.4"
   }
 }
