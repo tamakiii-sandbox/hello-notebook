@@ -1,5 +1,5 @@
 .PHONY: help setup build clean
-.PHONY: http-server watch
+.PHONY: serve watch
 
 help:
 	@cat $(firstword $(MAKEFILE_LIST))
@@ -13,8 +13,8 @@ build:
 watch:
 	npx --no-install webpack --watch --mode=development
 
-http-server:
-	npx --no-install webpack serve
+serve:
+	npx --no-install webpack serve --open=fale
 
 node_modules:
 	npm install --dev
