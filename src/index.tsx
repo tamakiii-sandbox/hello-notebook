@@ -4,9 +4,24 @@ import "tailwindcss/tailwind.css"
 
 console.log('Hello World!');
 
+const Header = () => (
+  <header>
+    hello
+  </header>
+)
+
+const Footer = () => (
+  <footer>
+    bye
+  </footer>
+)
+
 const App = () => {
   return (
-      <div>Hello, React</div>
+    <>
+      <Header />
+      <Footer />
+    </>
   )
 }
 
