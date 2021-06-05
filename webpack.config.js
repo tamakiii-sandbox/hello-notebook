@@ -36,6 +36,28 @@ const config = {
 
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
+      {
+        test: /\.css$/i,
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                // plugins: [
+                //   [
+                //     // "postcss-preset-env",
+                //     // {
+                //     //   // Options
+                //     // },
+                //   ],
+                // ],
+              },
+            },
+          }
+        ]
+      },
     ],
   },
   resolve: {
